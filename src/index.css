@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+  --primary:#6C63FF;
+  --secondary : #8B5CF6;
+  --accent : #A78BFA;
+  --background : #0F0F14;
+  --surface : #161925;
+  --text: #F5F7EB;
+  --mutetext : #9CA3AF;
+  --border : #252A3A;
+  --dark:#080B15;
+  --seconddark:#1e1e2e;
+}
+
+body{
+  font-family: "Inter",sans-serif;
+  background-color: var(--dark);
+  margin: 0;
+  padding: 0;
+}
+.nav
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4px 30px;
+  position: sticky;
+  top:0;
+  z-index: 100;
+  background-color: var(--dark);
+}
+
+.nav img{
+  width: 60px;
+}
+
+.nav .nav-list
+{
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav .nav-list .nav-item
+{
+  margin: auto 20px;
+  color: var(--mutetext);
+  font-weight: bold;
+  width: 48px;
+  transition: all 0.5s cubic-bezier(0.52, -0.00, 0.47, 1.03);
+}
+
+.nav .nav-list .nav-item:hover
+{
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
+.nav .nav-list .active
+{
+  margin: auto 20px;
+  font-weight: bold;
+  width: 48px;
+  color: var(--primary);
+  position: relative;
+  
+
+}
+.active-line{
+  content: "";
+  height: 2px;
+  width: auto;
+  background-color: var(--primary);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 22px;
+  text-align: center;
+  margin: auto;
+}
+/* The style of Button Compionent */
+.btn-comp
+{
+  background:var(--primary) ;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 20px;
+  color: var(--text);
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:all 0.5s ;
+}
+.btn-comp:hover
+{
+  background-color: var(--secondary);
+  transform: translateY(-2px);
+}
+.hero
+{
+  margin:20px 30px ;
+  display: grid;
+  
+  grid-template-columns: 50% 50%;
+  
+}
+
+.head-text
+{
+  line-height: 20px;
+  
+}
+
+.head-text h3
+{
+  color: var(--mutetext);
+}
+.head-text h1 , h2
+{
+  color: var(--text);
+}
+.head-text h1 span
+{
+  color: var(--primary);
+}
+
+.head-text p{
+  line-height: 30px;
+  max-width: 450px;
+  color: var(--mutetext);
+}
+
+
+.buttons 
+{
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.buttons .btn{
+  background: none;
+  border: 2px solid var(--text);
+  border-radius: 20px;
+  padding: 10px;
+  color: var(--text);
+  font-weight: bold;
+  width: 120px;
+  cursor: pointer;
+}
+
+.photo{
+  width: 450px;
+  
+  border-radius: 12px;
+}
+
+.icons
+{
+  display: flex;
+  color: #fff;
+  width: 100%;
+  margin-top: 10px;
+}
+.icon{
+  margin: 20px;
+  scale: 1.5;
+}
+
+
+main
+{
+  background-color: var(--seconddark);
+}
+
+.about
+{
+  margin: auto 30px;
+  border-bottom: 0.25px solid var(--mutetext);
+}
+.about p {
+  line-height: 30px;
+ 
+  color: var(--mutetext);
+  margin-top: 2px;
+}
+.about .about-icons
+{
+  display: flex;
+  align-items: center;
+}
+
+.about .about-item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+.about .about-item .icon{
+  color: #fff;
+  scale: 2;
+}
+
+.about-item h3{
+  font-size: 15px;
+  color: var(--primary);
+}
+.about-item p{
+  line-height: 3px;
+  font-size: 10px;
+}
+
+/*Main Header Component*/
+.main-header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.main-header .line
+{
+  content: '';
+  background-color: var(--primary);
+  width: 25px;
+  height: 3px;
+}
+
+.skills
+{
+  margin: auto 30px;
+  border-bottom: 0.25px solid var(--mutetext);
+
+}
+
+a 
+{
+  text-decoration: none;
+}
+.icon-list{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,100px);
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-icon{
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+}
+
+.logo-box{
+  width: 60px;
+  height: 50px;
+  background-color: var(--seconddark);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  margin:10px;
+  display: flex;
+  align-items:center ;
+}
+.logo-box .logo{
+  width: 35px;
+  margin: auto;
+}
+
+.projects{
+  margin: auto 30px;
+  border-bottom: 0.25px solid var(--mutetext);
+}
