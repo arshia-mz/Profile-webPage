@@ -14,6 +14,11 @@ export default function App() {
         <Skills/>
         <Projects/>
      </main>
+     <footer>
+      <p>
+        Made By ArshiaMohammadzadeh2026
+      </p>
+     </footer>
     </>
   )
 }
