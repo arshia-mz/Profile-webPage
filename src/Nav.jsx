@@ -5,6 +5,11 @@ export default function Nav()
 {
     return(
         <nav className="nav">
+            <div className='ham-menu'>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <img src={Logo} className="nav-logo"/>
             <ul className="nav-list">
                 <NavItem active={true}>
