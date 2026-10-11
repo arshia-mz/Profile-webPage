@@ -100,6 +100,10 @@
   {
     transform: translateY(80px);
   }
+  .not-acvtive-nav
+  {
+    display: none;
+  }
   .nav .nav-list .nav-item {
     font-size: 8px;
     margin: 10px auto;
@@ -114,14 +118,17 @@
     display: none;
   }
 
+  .ham-menu
+  {
+    display: flex;
+    flex-direction: column;
+  }
   .ham-menu span{
     content: '';
     background-color: #fff;
     width: 20px;
     height: 1px;
-    display: flex;
-    flex-direction: column;
-    margin: 3px;
+    margin: 2px;
   }
 
   /* Hide Talk button if needed */

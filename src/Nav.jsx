@@ -2,14 +2,14 @@ import { useState } from 'react';
 import Logo from './assets/Logo.png';
 import Button from './Button.jsx';
 import NavItem from './NavItem';
-export default function Nav()
-{
-    const [navActive,setNavActive] = useState('');
+export default function Nav({location,getloc})
+{ 
+    const [navActive,setNavActive] = useState('not-acvtive-nav');
     function handelActiveNav()
     {
         if(navActive === 'active-nav')
         {
-            setNavActive('')
+            setNavActive('not-acvtive-nav')
         }else{
             setNavActive('active-nav')
         }
@@ -23,20 +23,17 @@ export default function Nav()
             </div>
             <img src={Logo} className="nav-logo"/>
             <ul className={`nav-list ${navActive}`}>
-                <NavItem active={true}>
+                <NavItem active={location === 'Home'} loc={getloc}>
                     Home
                 </NavItem>
-                <NavItem >
+                <NavItem active={location === 'About'} loc={getloc}>
                     About
                 </NavItem>
-                <NavItem >
+                <NavItem active={location === 'Skills'} loc={getloc}>
                     Skills
                 </NavItem>
-                <NavItem >
+                <NavItem active={location === 'Projects'} loc={getloc}>
                     Projects
-                </NavItem>
-                <NavItem >
-                    Contacts
                 </NavItem>
             </ul>
             <div className="nav-button">

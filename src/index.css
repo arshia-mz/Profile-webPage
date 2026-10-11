@@ -103,6 +103,10 @@ body {
   margin: auto;
 }
 
+.ham-menu
+{
+  display: none;
+}
 
 /* =========================
    BUTTON
