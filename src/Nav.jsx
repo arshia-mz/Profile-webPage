@@ -35,6 +35,9 @@ export default function Nav({location,getloc})
                 <NavItem active={location === 'Projects'} loc={getloc}>
                     Projects
                 </NavItem>
+                <NavItem active={location === 'Projects'} loc={getloc}>
+                    Contacts
+                </NavItem>
             </ul>
             <div className="nav-button">
                 <Button>Let's Talk</Button>

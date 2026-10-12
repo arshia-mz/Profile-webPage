@@ -5,6 +5,7 @@ import Skills from './Skills.jsx';
 import Projects from './Projects.jsx';
 import './App.css';
 import { useState } from 'react';
+import Contacts from './Contacts.jsx';
 export default function App() {
   const [location , setLocation] = useState('Home');
   function getLocation(loc)
@@ -67,6 +68,7 @@ export default function App() {
         <About/>
         <Skills/>
         <Projects/>
+        <Contacts/>
      </main>
      <footer>
       <p>
