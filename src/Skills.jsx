@@ -11,9 +11,9 @@ import Html from './assets/Html.png';
 import Cpp from './assets/C++.png';
 
 
-export default function Skills()
+export default function Skills({...props})
 {
-    return<div id="skills" className="skills">
+    return<div id="skills" className="skills" {...props}>
         <MainHeader title={'Skills'}/>
         <div className="skills-icon">
             <ul className="icon-list">

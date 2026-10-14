@@ -35,7 +35,7 @@ export default function Nav({location,getloc})
                 <NavItem active={location === 'Projects'} loc={getloc}>
                     Projects
                 </NavItem>
-                <NavItem active={location === 'Projects'} loc={getloc}>
+                <NavItem active={location === 'Contacts'} loc={getloc}>
                     Contacts
                 </NavItem>
             </ul>

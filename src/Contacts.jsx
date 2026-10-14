@@ -1,7 +1,7 @@
-export default function Contacts()
+export default function Contacts({...props})
 {
     return(
-        <div className="contact">
+        <div className="contact" {...props}>
             <ul className="contact-list">
                 <li>
                     <a href="">My GitHub</a>

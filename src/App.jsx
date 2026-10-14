@@ -6,6 +6,7 @@ import Projects from './Projects.jsx';
 import './App.css';
 import { useState } from 'react';
 import Contacts from './Contacts.jsx';
+import AboutAdd from './additions/AboutAdd.jsx';
 export default function App() {
   const [location , setLocation] = useState('Home');
   function getLocation(loc)
@@ -19,6 +20,7 @@ export default function App() {
       <Nav getloc={getLocation} location={location}/>
       <main>
         <About style={{height:'100%'}}/>
+        <AboutAdd/>
       </main>
       <footer>
       <p>
@@ -34,7 +36,7 @@ export default function App() {
     return(<>
       <Nav getloc={getLocation} location={location}/>
       <main>
-        <Skills style={{height:'100%'}}/>
+        <Skills style={{height:'100vh'}}/>
       </main>
       <footer>
       <p>
@@ -50,7 +52,7 @@ export default function App() {
     return(<>
       <Nav getloc={getLocation} location={location}/>
       <main>
-        <Projects style={{height:'100%'}}/>
+        <Projects style={{height:'100vh'}}/>
       </main>
       <footer>
       <p>
@@ -59,6 +61,22 @@ export default function App() {
      </footer>
       </>
     ); 
+  }
+
+  if(location === 'Contacts')
+  {
+    return(<>
+      <Nav getloc={getLocation} location={location}/>
+      <main>
+        <Contacts style={{height:'100vh'}}/>
+      </main>
+      <footer>
+      <p>
+        Made By ArshiaMohammadzadeh2026
+      </p>
+     </footer>
+      </>
+    );
   }
   return (
     <>
